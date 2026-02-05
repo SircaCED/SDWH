@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_UcER0NqiEfCNxrLu5jpgrA" confirmationNeeded="false" hide="false" name="prod">
+  <contextParameter xmi:id="_UcER0dqiEfCNxrLu5jpgrA" comment="" name="qvd_Anagrafiche" prompt="qvd_Anagrafiche?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="//srvqs/qvd_mart_area$/Anagrafiche"/>
+  <contextParameter xmi:id="_yg8GwAHKEfGPHvoaRmz3Wg" comment="" name="qvd_SalesDashboard" prompt="qvd_SalesDashboard?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="//srvqs/qvd_mart_area$/SalesDashboard"/>
+</talendfile:ContextType>
