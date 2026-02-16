@@ -12,6 +12,9 @@
     }, {
       "id" : "_HYd2cAj2EfGPHvoaRmz3Wg",
       "name" : "qvd_PortafoglioOrdini"
+    }, {
+      "id" : "_pfcZQAtbEfGPHvoaRmz3Wg",
+      "name" : "qvd_GestioneAccessi"
     } ]
   } ]
 }
