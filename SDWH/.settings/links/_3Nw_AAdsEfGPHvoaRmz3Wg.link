@@ -1,0 +1,14 @@
+{
+  "itemId" : "_3Nw_AAdsEfGPHvoaRmz3Wg",
+  "contextList" : [ {
+    "contextName" : "prod",
+    "repoId" : "_m8jm8NqhEfCNxrLu5jpgrA",
+    "parameterList" : [ {
+      "id" : "_UcER0dqiEfCNxrLu5jpgrA",
+      "name" : "qvd_Anagrafiche"
+    }, {
+      "id" : "_yg8GwAHKEfGPHvoaRmz3Wg",
+      "name" : "qvd_SalesDashboard"
+    } ]
+  } ]
+}

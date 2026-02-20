@@ -142,12 +142,12 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
     <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:plQcI3fS1jZlBeacFN1GOWB1p5LRSpH30YiRVpp/" show="false"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="SalesDashboard2"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="SalesDashboard"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT *&#xA;FROM&#x9;SalesDashboard2&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT *&#xA;FROM&#x9;SalesDashboard&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -177,7 +177,7 @@
       <elementValue elementRef="TRIM" value="false" id="13"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="DataDocumento" id="14"/>
       <elementValue elementRef="TRIM" value="false" id="15"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DataConsegnaPrevisata" id="16"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DataConsegnaPrevista" id="16"/>
       <elementValue elementRef="TRIM" value="false" id="17"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="AgenteDocumento" id="18"/>
       <elementValue elementRef="TRIM" value="false" id="19"/>
@@ -212,29 +212,29 @@
     <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" value="30" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBInput_1">
-      <column comment="" key="false" length="50" name="CodiceAzienda" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="ClasseDocumento" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="TipoDocumento" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="NumeroDoc" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="NumeroRigaDoc" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="AnnoRifAnalisi" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="MeseRifAnalisi" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="23" name="DataDocumento" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="23" name="DataConsegnaPrevisata" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="AgenteDocumento" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="TipoSoggetto" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Cliente" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="CodiceArticolo" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="UM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="38" name="QuantitaUM" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="38" name="Valore" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="38" name="Costo" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="Omaggio" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="StatoArticoloStorico" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="200" name="ChiaveUnivocaRigaAzienda" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="ChiaveTestataOriginale" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="NumeroRigaOriginale" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="23" name="ultimo_aggiornamento" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CodiceAzienda" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ClasseDocumento" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TipoDocumento" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NumeroDoc" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="NumeroRigaDoc" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="AnnoRifAnalisi" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="MeseRifAnalisi" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DataDocumento" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DataConsegnaPrevista" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AgenteDocumento" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TipoSoggetto" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Cliente" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CodiceArticolo" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="UM" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="QuantitaUM" nullable="true" pattern="" precision="-1" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="Valore" nullable="true" pattern="" precision="-1" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="Costo" nullable="true" pattern="" precision="-1" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="Omaggio" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="StatoArticoloStorico" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ChiaveUnivocaRigaAzienda" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ChiaveTestataOriginale" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="NumeroRigaOriginale" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ultimo_aggiornamento" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="560" posY="40">
@@ -289,7 +289,7 @@
         <mapperTableEntries name="AnnoRifAnalisi" expression="row1.AnnoRifAnalisi " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="MeseRifAnalisi" expression="row1.MeseRifAnalisi " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="DataDocumento" expression="TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;, row1.DataDocumento) " type="id_String" nullable="true"/>
-        <mapperTableEntries name="DataConsegnaPrevisata" expression="TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;, row1.DataConsegnaPrevisata) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DataConsegnaPrevisata" expression="TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;, row1.DataConsegnaPrevista) " type="id_String" nullable="true"/>
         <mapperTableEntries name="AgenteDocumento" expression="row1.AgenteDocumento " type="id_String"/>
         <mapperTableEntries name="TipoSoggetto" expression="row1.TipoSoggetto " type="id_String" nullable="true"/>
         <mapperTableEntries name="Cliente" expression="row1.Cliente " type="id_String" nullable="true"/>
@@ -314,8 +314,8 @@
         <mapperTableEntries name="AnnoRifAnalisi" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="MeseRifAnalisi" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="DataDocumento" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="DataConsegnaPrevisata" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="AgenteDocumento" type="id_String"/>
+        <mapperTableEntries name="DataConsegnaPrevista" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="AgenteDocumento" type="id_String" nullable="true"/>
         <mapperTableEntries name="TipoSoggetto" type="id_String" nullable="true"/>
         <mapperTableEntries name="Cliente" type="id_String" nullable="true"/>
         <mapperTableEntries name="CodiceArticolo" type="id_String" nullable="true"/>
@@ -1341,7 +1341,7 @@
       <elementValue elementRef="TRIM" value="false" id="13"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="DataDocumento" id="14"/>
       <elementValue elementRef="TRIM" value="false" id="15"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DataConsegnaPrevisata" id="16"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DataConsegnaPrevista" id="16"/>
       <elementValue elementRef="TRIM" value="false" id="17"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="AgenteDocumento" id="18"/>
       <elementValue elementRef="TRIM" value="false" id="19"/>
@@ -1384,21 +1384,21 @@
       <column comment="" defaultValue="" key="false" length="10" name="AnnoRifAnalisi" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="MeseRifAnalisi" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="23" name="DataDocumento" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="23" name="DataConsegnaPrevisata" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DataConsegnaPrevista" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="AgenteDocumento" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="TipoSoggetto" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="50" name="Cliente" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="50" name="CodiceArticolo" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="UM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Cliente" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="CodiceArticolo" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="UM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="38" name="QuantitaUM" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="38" name="Valore" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="38" name="Costo" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="Omaggio" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="1" name="StatoArticoloStorico" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="200" name="ChiaveUnivocaRigaAzienda" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="ChiaveTestataOriginale" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="StatoArticoloStorico" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="ChiaveUnivocaRigaAzienda" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="ChiaveTestataOriginale" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="NumeroRigaOriginale" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="23" name="ultimo_aggiornamento" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="ultimo_aggiornamento" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="560" posY="200">
@@ -1453,7 +1453,7 @@
         <mapperTableEntries name="AnnoRifAnalisi" expression="row12.AnnoRifAnalisi " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="MeseRifAnalisi" expression="row12.MeseRifAnalisi " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="DataDocumento" expression="TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;, row12.DataDocumento) " type="id_String" nullable="true"/>
-        <mapperTableEntries name="DataConsegnaPrevisata" expression="TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;, row12.DataConsegnaPrevisata) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DataConsegnaPrevisata" expression="TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;, row12.DataConsegnaPrevista) " type="id_String" nullable="true"/>
         <mapperTableEntries name="AgenteDocumento" expression="row12.AgenteDocumento " type="id_String"/>
         <mapperTableEntries name="TipoSoggetto" expression="row12.TipoSoggetto " type="id_String" nullable="true"/>
         <mapperTableEntries name="Cliente" expression="row12.Cliente " type="id_String" nullable="true"/>
@@ -1478,7 +1478,7 @@
         <mapperTableEntries name="AnnoRifAnalisi" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="MeseRifAnalisi" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="DataDocumento" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="DataConsegnaPrevisata" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="DataConsegnaPrevista" type="id_Date" nullable="true"/>
         <mapperTableEntries name="AgenteDocumento" type="id_String" nullable="true"/>
         <mapperTableEntries name="TipoSoggetto" type="id_String" nullable="true"/>
         <mapperTableEntries name="Cliente" type="id_String" nullable="true"/>
@@ -1586,7 +1586,7 @@
       <elementValue elementRef="TRIM" value="false" id="13"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="DataDocumento" id="14"/>
       <elementValue elementRef="TRIM" value="false" id="15"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DataConsegnaPrevisata" id="16"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DataConsegnaPrevista" id="16"/>
       <elementValue elementRef="TRIM" value="false" id="17"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="AgenteDocumento" id="18"/>
       <elementValue elementRef="TRIM" value="false" id="19"/>
@@ -1629,21 +1629,21 @@
       <column comment="" defaultValue="" key="false" length="10" name="AnnoRifAnalisi" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="MeseRifAnalisi" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="23" name="DataDocumento" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="23" name="DataConsegnaPrevisata" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DataConsegnaPrevista" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="AgenteDocumento" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="TipoSoggetto" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="50" name="Cliente" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="50" name="CodiceArticolo" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="UM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Cliente" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="CodiceArticolo" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="UM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="38" name="QuantitaUM" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="38" name="Valore" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="38" name="Costo" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="Omaggio" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="1" name="StatoArticoloStorico" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="200" name="ChiaveUnivocaRigaAzienda" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="ChiaveTestataOriginale" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="StatoArticoloStorico" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="ChiaveUnivocaRigaAzienda" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="ChiaveTestataOriginale" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="NumeroRigaOriginale" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="23" name="ultimo_aggiornamento" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="ultimo_aggiornamento" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="560" posY="360">
@@ -1698,7 +1698,7 @@
         <mapperTableEntries name="AnnoRifAnalisi" expression="row13.AnnoRifAnalisi " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="MeseRifAnalisi" expression="row13.MeseRifAnalisi " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="DataDocumento" expression="TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;, row13.DataDocumento) " type="id_String" nullable="true"/>
-        <mapperTableEntries name="DataConsegnaPrevisata" expression="TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;, row13.DataConsegnaPrevisata) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DataConsegnaPrevisata" expression="TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;, row13.DataConsegnaPrevista) " type="id_String" nullable="true"/>
         <mapperTableEntries name="AgenteDocumento" expression="row13.AgenteDocumento " type="id_String"/>
         <mapperTableEntries name="TipoSoggetto" expression="row13.TipoSoggetto " type="id_String" nullable="true"/>
         <mapperTableEntries name="Cliente" expression="row13.Cliente " type="id_String" nullable="true"/>
@@ -1723,7 +1723,7 @@
         <mapperTableEntries name="AnnoRifAnalisi" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="MeseRifAnalisi" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="DataDocumento" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="DataConsegnaPrevisata" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="DataConsegnaPrevista" type="id_Date" nullable="true"/>
         <mapperTableEntries name="AgenteDocumento" type="id_String" nullable="true"/>
         <mapperTableEntries name="TipoSoggetto" type="id_String" nullable="true"/>
         <mapperTableEntries name="Cliente" type="id_String" nullable="true"/>
@@ -2165,7 +2165,7 @@
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
-    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="SalesDashboard2"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="SalesDashboard"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
