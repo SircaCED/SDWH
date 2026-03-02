@@ -261,7 +261,7 @@
       <column comment="" defaultValue="" key="false" length="10" name="AnnoRifAnalisi" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="MeseRifAnalisi" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="23" name="DataDocumento" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="23" name="DataConsegnaPrevisata" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DataConsegnaPrevista" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="AgenteDocumento" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="TipoSoggetto" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="Cliente" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -289,7 +289,7 @@
         <mapperTableEntries name="AnnoRifAnalisi" expression="row1.AnnoRifAnalisi " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="MeseRifAnalisi" expression="row1.MeseRifAnalisi " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="DataDocumento" expression="TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;, row1.DataDocumento) " type="id_String" nullable="true"/>
-        <mapperTableEntries name="DataConsegnaPrevisata" expression="TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;, row1.DataConsegnaPrevista) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DataConsegnaPrevista" expression="TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;, row1.DataConsegnaPrevista) " type="id_String" nullable="true"/>
         <mapperTableEntries name="AgenteDocumento" expression="row1.AgenteDocumento " type="id_String"/>
         <mapperTableEntries name="TipoSoggetto" expression="row1.TipoSoggetto " type="id_String" nullable="true"/>
         <mapperTableEntries name="Cliente" expression="row1.Cliente " type="id_String" nullable="true"/>
@@ -355,7 +355,7 @@
       <column comment="" defaultValue="" key="false" length="10" name="AnnoRifAnalisi" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="MeseRifAnalisi" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="23" name="DataDocumento" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="23" name="DataConsegnaPrevisata" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DataConsegnaPrevista" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="AgenteDocumento" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="TipoSoggetto" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="Cliente" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -1425,7 +1425,7 @@
       <column comment="" defaultValue="" key="false" length="10" name="AnnoRifAnalisi" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="MeseRifAnalisi" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="23" name="DataDocumento" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="23" name="DataConsegnaPrevisata" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DataConsegnaPrevista" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="AgenteDocumento" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="TipoSoggetto" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="Cliente" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -1453,7 +1453,7 @@
         <mapperTableEntries name="AnnoRifAnalisi" expression="row12.AnnoRifAnalisi " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="MeseRifAnalisi" expression="row12.MeseRifAnalisi " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="DataDocumento" expression="TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;, row12.DataDocumento) " type="id_String" nullable="true"/>
-        <mapperTableEntries name="DataConsegnaPrevisata" expression="TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;, row12.DataConsegnaPrevista) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DataConsegnaPrevista" expression="TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;, row12.DataConsegnaPrevista) " type="id_String" nullable="true"/>
         <mapperTableEntries name="AgenteDocumento" expression="row12.AgenteDocumento " type="id_String"/>
         <mapperTableEntries name="TipoSoggetto" expression="row12.TipoSoggetto " type="id_String" nullable="true"/>
         <mapperTableEntries name="Cliente" expression="row12.Cliente " type="id_String" nullable="true"/>
@@ -1519,7 +1519,7 @@
       <column comment="" defaultValue="" key="false" length="10" name="AnnoRifAnalisi" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="MeseRifAnalisi" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="23" name="DataDocumento" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="23" name="DataConsegnaPrevisata" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DataConsegnaPrevista" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="AgenteDocumento" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="TipoSoggetto" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="Cliente" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -1670,7 +1670,7 @@
       <column comment="" defaultValue="" key="false" length="10" name="AnnoRifAnalisi" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="MeseRifAnalisi" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="23" name="DataDocumento" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="23" name="DataConsegnaPrevisata" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DataConsegnaPrevista" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="AgenteDocumento" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="TipoSoggetto" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="Cliente" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -1698,7 +1698,7 @@
         <mapperTableEntries name="AnnoRifAnalisi" expression="row13.AnnoRifAnalisi " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="MeseRifAnalisi" expression="row13.MeseRifAnalisi " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="DataDocumento" expression="TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;, row13.DataDocumento) " type="id_String" nullable="true"/>
-        <mapperTableEntries name="DataConsegnaPrevisata" expression="TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;, row13.DataConsegnaPrevista) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DataConsegnaPrevista" expression="TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;, row13.DataConsegnaPrevista) " type="id_String" nullable="true"/>
         <mapperTableEntries name="AgenteDocumento" expression="row13.AgenteDocumento " type="id_String"/>
         <mapperTableEntries name="TipoSoggetto" expression="row13.TipoSoggetto " type="id_String" nullable="true"/>
         <mapperTableEntries name="Cliente" expression="row13.Cliente " type="id_String" nullable="true"/>
@@ -1764,7 +1764,7 @@
       <column comment="" defaultValue="" key="false" length="10" name="AnnoRifAnalisi" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="MeseRifAnalisi" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="23" name="DataDocumento" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="23" name="DataConsegnaPrevisata" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DataConsegnaPrevista" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="AgenteDocumento" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="TipoSoggetto" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="Cliente" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -2030,6 +2030,72 @@
     <metadata connector="MERGE" name="MERGE"/>
     <metadata connector="REJECT" name="REJECT"/>
   </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="1200">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_17" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Jyu+c0loXP7fGeLAtWbF6o84G1W+Jm6UAeyOR/IG" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="Aziende"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT *&#xA;FROM&#x9;Aziende&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_ALWAYS_ENCRYPTED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="KEYSTORE_PRINCIPAL_ID" value="" show="false"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_SECRET" value="" show="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="CodiceAzienda" id="0"/>
+      <elementValue elementRef="TRIM" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Azienda" id="2"/>
+      <elementValue elementRef="TRIM" value="false" id="3"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" value="30" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_17">
+      <column comment="" key="false" length="50" name="CodiceAzienda" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Azienda" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="QVDOutput" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="800" posY="1200">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tQVDOutput_17" show="false"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="cXZkLW91dHB1dCNRVkQjT3V0cHV0" show="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="FILE" name="configuration.dataset.datastore.localFilePath" value="context.qvd_Anagrafiche +&quot;/&quot;+&quot;Aziende.qvd&quot;"/>
+    <elementParameter field="TEXT" name="configuration.$maxBatchSize" value="1000"/>
+    <elementParameter field="CHECK" name="configuration.createFolderIfNotExists" value="true"/>
+    <elementParameter field="CHECK" name="configuration.failIfAlreadyExists" value="false"/>
+    <elementParameter field="TEXT" name="configuration.qvdConfiguration.tableName" value="DataFromStudio"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.qvdConfiguration.mode" value="MEMORY"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataset.__version" value="-1" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataset.datastore.__version" value="-1" show="false"/>
+    <metadata connector="FLOW" name="tQVDOutput_17">
+      <column comment="" key="false" length="50" name="CodiceAzienda" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Azienda" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="LOOKUP" name="LOOKUP"/>
+    <metadata connector="MERGE" name="MERGE"/>
+    <metadata connector="REJECT" name="REJECT"/>
+  </node>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tParallelize_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
   </connection>
@@ -2087,6 +2153,9 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Parallelize" show="false"/>
   </connection>
   <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" outputId="16" source="tParallelize_1" target="tDBInput_16">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Parallelize" show="false"/>
+  </connection>
+  <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" outputId="17" source="tParallelize_1" target="tDBInput_17">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Parallelize" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tQVDOutput_2">
@@ -2156,6 +2225,10 @@
   <connection connectorName="FLOW" label="row16" lineStyle="0" metaname="tDBInput_16" offsetLabelX="0" offsetLabelY="0" source="tDBInput_16" target="tQVDOutput_16">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row16" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row17" lineStyle="0" metaname="tDBInput_17" offsetLabelX="0" offsetLabelY="0" source="tDBInput_17" target="tQVDOutput_17">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row17" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
@@ -2276,6 +2349,13 @@
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_16" show="false"/>
     <elementParameter field="TEXT" name="SUBJOB_TITLE" value="StatiArticolo"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_17" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Aziende"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
