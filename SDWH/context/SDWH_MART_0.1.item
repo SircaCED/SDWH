@@ -4,4 +4,5 @@
   <contextParameter xmi:id="_yg8GwAHKEfGPHvoaRmz3Wg" comment="" name="qvd_SalesDashboard" prompt="qvd_SalesDashboard?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="//srvqs/qvd_mart_area$/SalesDashboard"/>
   <contextParameter xmi:id="_HYd2cAj2EfGPHvoaRmz3Wg" comment="" name="qvd_PortafoglioOrdini" prompt="qvd_PortafoglioOrdini?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="//srvqs/qvd_mart_area$/PortafoglioOrdini"/>
   <contextParameter xmi:id="_pfcZQAtbEfGPHvoaRmz3Wg" comment="" name="qvd_GestioneAccessi" prompt="qvd_GestioneAccessi?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="//srvqs/qvd_mart_area$/Gestione_Accessi"/>
+  <contextParameter xmi:id="_mat8EBckEfGPHvoaRmz3Wg" comment="" name="qvd_Spedito" prompt="qvd_Spedito?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="//srvqs/qvd_mart_area$/Spedito"/>
 </talendfile:ContextType>
