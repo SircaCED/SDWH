@@ -1,0 +1,23 @@
+{
+  "itemId" : "_2DrasCNpEfGWBZ2yY0XDxA",
+  "contextList" : [ {
+    "contextName" : "prod",
+    "repoId" : "_m8jm8NqhEfCNxrLu5jpgrA",
+    "parameterList" : [ {
+      "id" : "_UcER0dqiEfCNxrLu5jpgrA",
+      "name" : "qvd_Anagrafiche"
+    }, {
+      "id" : "_yg8GwAHKEfGPHvoaRmz3Wg",
+      "name" : "qvd_SalesDashboard"
+    }, {
+      "id" : "_HYd2cAj2EfGPHvoaRmz3Wg",
+      "name" : "qvd_PortafoglioOrdini"
+    }, {
+      "id" : "_pfcZQAtbEfGPHvoaRmz3Wg",
+      "name" : "qvd_GestioneAccessi"
+    }, {
+      "id" : "_mat8EBckEfGPHvoaRmz3Wg",
+      "name" : "qvd_Spedito"
+    } ]
+  } ]
+}
