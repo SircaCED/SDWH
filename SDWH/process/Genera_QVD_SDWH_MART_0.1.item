@@ -524,8 +524,12 @@
       <elementValue elementRef="TRIM" value="false" id="29"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="MagazzinoPreferenzialeDescri" id="30"/>
       <elementValue elementRef="TRIM" value="false" id="31"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ultimo_aggiornamento" id="32"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CodiceEAN" id="32"/>
       <elementValue elementRef="TRIM" value="false" id="33"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CodiceUPC" id="34"/>
+      <elementValue elementRef="TRIM" value="false" id="35"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ultimo_aggiornamento" id="36"/>
+      <elementValue elementRef="TRIM" value="false" id="37"/>
     </elementParameter>
     <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
     <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" value="30" show="false"/>
@@ -545,9 +549,11 @@
       <column comment="" defaultValue="" key="false" length="10" name="PesoSpecifico" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="FattoreConvKG" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="FattoreConvLT" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="50" name="MagazzinoPreferenziale" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="50" name="MagazzinoPreferenzialeDescri" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="23" name="ultimo_aggiornamento" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="MagazzinoPreferenziale" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="MagazzinoPreferenzialeDescri" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="CodiceEAN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="CodiceUPC" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="ultimo_aggiornamento" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="QVDOutput" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="480" posY="760">
@@ -579,9 +585,11 @@
       <column comment="" defaultValue="" key="false" length="10" name="PesoSpecifico" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="FattoreConvKG" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="FattoreConvLT" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="50" name="MagazzinoPreferenziale" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="50" name="MagazzinoPreferenzialeDescri" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="23" name="ultimo_aggiornamento" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="MagazzinoPreferenziale" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="MagazzinoPreferenzialeDescri" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="CodiceEAN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="CodiceUPC" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="ultimo_aggiornamento" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <metadata connector="LOOKUP" name="LOOKUP"/>
     <metadata connector="MERGE" name="MERGE"/>
