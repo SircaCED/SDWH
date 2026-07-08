@@ -283,14 +283,14 @@
       <column comment="" key="false" length="23" name="ultimo_aggiornamento" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out1">
         <mapperTableEntries name="CodiceAzienda" expression="row1.CodiceAzienda " type="id_String" nullable="true"/>
         <mapperTableEntries name="ClasseDocumento" expression="row1.ClasseDocumento " type="id_String" nullable="true"/>
         <mapperTableEntries name="TipoDocumento" expression="row1.TipoDocumento " type="id_String" nullable="true"/>
         <mapperTableEntries name="NumeroDoc" expression="row1.NumeroDoc " type="id_String" nullable="true"/>
-        <mapperTableEntries name="NumeroRigaDoc" expression="row1.NumeroRigaDoc " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="NumeroRigaDoc" expression="row1.NumeroRigaDoc / 0" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="AnnoRifAnalisi" expression="row1.AnnoRifAnalisi " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="MeseRifAnalisi" expression="row1.MeseRifAnalisi " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="DataDocumento" expression="TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;, row1.DataDocumento) " type="id_String" nullable="true"/>
@@ -301,7 +301,7 @@
         <mapperTableEntries name="CodiceArticolo" expression="row1.CodiceArticolo " type="id_String" nullable="true"/>
         <mapperTableEntries name="UM" expression="row1.UM " type="id_String" nullable="true"/>
         <mapperTableEntries name="QuantitaUM" expression="row1.QuantitaUM " type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="Valore" expression="row1.Valore " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="Valore" expression="row1.Valore" type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="Costo" expression="row1.Costo " type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="Omaggio" expression="row1.Omaggio " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="StatoArticoloStorico" expression="row1.StatoArticoloStorico " type="id_String" nullable="true"/>
@@ -2338,8 +2338,8 @@
   </node>
   <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1160" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_1" show="false"/>
-    <elementParameter field="TEXT" name="TO" value="&quot;ced@sirca.it&quot;"/>
-    <elementParameter field="TEXT" name="FROM" value="&quot;TalendCloud@sirca.it&quot;"/>
+    <elementParameter field="TEXT" name="TO" value="&quot;ced@sircaspa.com&quot;"/>
+    <elementParameter field="TEXT" name="FROM" value="&quot;TalendCloud@sircaspa.com&quot;"/>
     <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="false"/>
     <elementParameter field="TEXT" name="PERSONAL_NAME" value="&quot;sender&quot;" show="false"/>
     <elementParameter field="TEXT" name="CC" value="&quot;&quot;"/>
@@ -2349,7 +2349,7 @@
     <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="false"/>
     <elementParameter field="TABLE" name="ATTACHMENTS"/>
     <elementParameter field="TABLE" name="HEADERS"/>
-    <elementParameter field="TEXT" name="SMTP_HOST" value="&quot;srvexch.sirca.loc&quot;"/>
+    <elementParameter field="TEXT" name="SMTP_HOST" value="&quot;10.200.10.25&quot;"/>
     <elementParameter field="TEXT" name="SMTP_PORT" value="25"/>
     <elementParameter field="CHECK" name="SSL" value="false"/>
     <elementParameter field="CHECK" name="STARTTLS" value="false"/>
