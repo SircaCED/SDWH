@@ -290,7 +290,7 @@
         <mapperTableEntries name="ClasseDocumento" expression="row1.ClasseDocumento " type="id_String" nullable="true"/>
         <mapperTableEntries name="TipoDocumento" expression="row1.TipoDocumento " type="id_String" nullable="true"/>
         <mapperTableEntries name="NumeroDoc" expression="row1.NumeroDoc " type="id_String" nullable="true"/>
-        <mapperTableEntries name="NumeroRigaDoc" expression="row1.NumeroRigaDoc / 0" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="NumeroRigaDoc" expression="row1.NumeroRigaDoc" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="AnnoRifAnalisi" expression="row1.AnnoRifAnalisi " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="MeseRifAnalisi" expression="row1.MeseRifAnalisi " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="DataDocumento" expression="TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;, row1.DataDocumento) " type="id_String" nullable="true"/>
