@@ -306,14 +306,16 @@
       <elementValue elementRef="TRIM" value="false" id="59"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Base" id="60"/>
       <elementValue elementRef="TRIM" value="false" id="61"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DestinazioneProdotto" id="62"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="StatoFisico" id="62"/>
       <elementValue elementRef="TRIM" value="false" id="63"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CodiceADR" id="64"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DestinazioneProdotto" id="64"/>
       <elementValue elementRef="TRIM" value="false" id="65"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FamigliaArticolo2" id="66"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CodiceADR" id="66"/>
       <elementValue elementRef="TRIM" value="false" id="67"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ultimo_aggiornamento" id="68"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FamigliaArticolo2" id="68"/>
       <elementValue elementRef="TRIM" value="false" id="69"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ultimo_aggiornamento" id="70"/>
+      <elementValue elementRef="TRIM" value="false" id="71"/>
     </elementParameter>
     <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
     <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" value="30" show="false"/>
@@ -350,6 +352,7 @@
       <column comment="" key="false" length="50" name="Gloss" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="FasciaColore" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="Base" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="StatoFisico" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="DestinazioneProdotto" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="CodiceADR" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="FamigliaArticolo2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -402,6 +405,7 @@
       <column comment="" key="false" length="50" name="Gloss" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="FasciaColore" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="Base" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="StatoFisico" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="DestinazioneProdotto" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="CodiceADR" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="FamigliaArticolo2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
