@@ -2025,7 +2025,7 @@
       <column comment="" key="false" length="23" name="ultimo_aggiornamento" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="spedito">
         <mapperTableEntries name="CodiceAzienda" expression="row21.CodiceAzienda " type="id_String" nullable="true"/>
@@ -2042,7 +2042,7 @@
         <mapperTableEntries name="Cliente" expression="row21.Cliente " type="id_String" nullable="true"/>
         <mapperTableEntries name="CodiceArticolo" expression="row21.CodiceArticolo " type="id_String" nullable="true"/>
         <mapperTableEntries name="UM" expression="row21.UM " type="id_String" nullable="true"/>
-        <mapperTableEntries name="QuantitaUM" expression="row21.QuantitaUM " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="QuantitaUM" expression="row21.QuantitaUM" type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="Valore" expression="row21.Valore " type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="Costo" expression="row21.Costo " type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="Omaggio" expression="row21.Omaggio " type="id_Integer" nullable="true"/>
